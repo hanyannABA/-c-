@@ -27,3 +27,42 @@
 
 ![image](https://github.com/user-attachments/assets/f9443d5b-5d1a-48f3-a10f-621c809416a2)
 
+用c++代码将上面的图进行存储，代码如下：
+____________________________________________________________________
+#include <bits/stdc++.h>
+using namespace std;
+
+int mat[10][10]={0};
+
+
+//邻接矩阵
+void create_Amat(int (&mat)[10][10], int begin, int end){
+    mat[end][begin]=1;
+}
+
+
+//输出邻接矩阵
+void show_Amat(int (&mat)[10][10]){
+    for (int i=0; i<10; i++){
+        for (int j=0; j<10; j++){
+            cout<<mat[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+
+int main(){
+
+
+    int n; cin>>n;//输入要存入的边数
+    int begin, end;
+    for (int i=0; i<n; i++){
+        cin>>begin>>end;//遍历边（的起点和终点）
+        create_Amat(mat, begin, end);
+    }
+
+    show_Amat(mat);
+
+}
+____________________________________________________________________________
