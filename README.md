@@ -9,4 +9,5 @@
 
 上面的图是一个有向图，这种图就能很好的用邻接矩阵存储。
 
-![image](https://github.com/user-attachments/assets/c3b7f571-514e-4aaf-9da5-9c718cd69a68)
+![image](https://github.com/user-attachments/assets/f9443d5b-5d1a-48f3-a10f-621c809416a2)
+
